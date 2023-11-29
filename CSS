@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #D1884F;
+    --secondary-color: #008AAA;
+    --accent-color: #3BBADB;
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header, nav, section, footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    header, nav, section, footer {
+        padding: 10px 0;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
